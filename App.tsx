@@ -26,6 +26,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import FaltListTest from './src/component/FaltListTest';
 import FlatListMyown from './src/component/FlatListMyown';
+import Todolist from './src/Todolist';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -42,9 +43,11 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-     <FaltListTest/>
-     <FlatListMyown/>
+     {/* <FaltListTest/>
+     <FlatListMyown/> */}
+     <Todolist/>
     </SafeAreaView>
+
   );
 }
 
